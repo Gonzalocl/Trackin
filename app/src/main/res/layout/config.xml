@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_rate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_rate1" />
+
+        <EditText
+            android:id="@+id/rate"
+            android:hint="@string/default_rate"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:inputType="number"/>
+
+        <!--<Spinner-->
+            <!--android:id="@+id/units"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="40dp" />-->
+
+        <TextView
+            android:id="@+id/text_rate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_rate2"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        
+        <TextView
+            android:id="@+id/text_hist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_hist"/>
+        
+        <EditText
+            android:id="@+id/hist"
+            android:hint="@string/default_hist"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:inputType="number"/>
+        
+    </LinearLayout>
+
+    <TextView
+        android:text="Gonzalo Caparrós Laiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_start" />
+
+</LinearLayout>

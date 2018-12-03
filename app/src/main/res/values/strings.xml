@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Trackin</string>
+    <string-array name="units">
+        <item>ms</item>
+        <item>sec</item>
+        <item>min</item>
+    </string-array>
+    <string name="text_rate1">Intervalo</string>
+    <string name="button_start">Empezar</string>
+    <string name="button_stop">Terminar</string>
+    <string name="default_rate">1</string>
+    <string name="text_rate2">segundos (0 para lo antes posible)</string>
+    <string name="text_hist">Lineas del historial</string>
+    <string name="default_hist">30</string>
+    <string name="channel_name">tracks</string>
+    <string name="channel_description">number of points</string>
+    <string name="kml_start"></string>
+    <string name="mkl_end"></string>
+</resources>
