@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.IntentService;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityCompat.OnRequestPermissionsResultCallback;
@@ -67,7 +68,9 @@ public class Maine extends Activity implements OnRequestPermissionsResultCallbac
 
                 startActivity(i);
                 Intent noti = new Intent(v.getContext(), ListeninService.class);
-                startForegroundService(noti);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    startForegroundService(noti);
+                }
 
             }
         });

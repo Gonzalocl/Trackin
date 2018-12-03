@@ -47,7 +47,8 @@ public class Notification {
 
     public void notitify(String text) {
         builder.setContentText(text);
-        notificationManager.notify(NOT_ID, builder.build());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+            notificationManager.notify(NOT_ID, builder.build());
     }
 
 
